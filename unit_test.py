@@ -28,9 +28,10 @@ class TestListXiangqi(unittest.TestCase):
         for i in piece_list:
             self.assertIs(None, i.get_location(), 'Initial location is not None')
 
+        # Check if general is in check
         for i in piece_list:
             if i is general:
-                self.assertTrue(general.get_in_check(), 'General is not in check')
+                self.assertFalse(general.get_in_check(), 'General is in check')
 
     def test_3(self):
         """

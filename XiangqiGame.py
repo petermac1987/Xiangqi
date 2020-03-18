@@ -5,6 +5,7 @@ class XiangqiGame:
     def __init__(self):
         self._game_state = 'UNFINISHED'
 
+        # The board
         self._the_board = ['a1', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1', 'i1',
                            'a2', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2', 'i2',
                            'a3', 'b3', 'c3', 'd3', 'e3', 'f3', 'g3', 'h3', 'i3',
